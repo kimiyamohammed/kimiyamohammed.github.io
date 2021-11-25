@@ -1,0 +1,36 @@
+body{
+    background-color:#FFE5CC;
+    font-family: Tahoma;
+    font-size: 90%;
+    margin-top:4%;
+    margin-left:10%;
+}
+h1{
+    color:#331900;
+}
+h2{
+    color: #630;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+p::first-letter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:1.5em;
+}
+#favmovies > li{
+    font-style: italic;
+}
+#favmovies{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#emotion img{
+    width:10%;
+}
+footer img{
+    width:10%;
+}
