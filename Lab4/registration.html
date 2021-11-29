@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title>Workshop Registration</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>  
+    </head>
+    <body>
+        <div class="container">
+            <div class="grid-header">
+                <form class="registration" action="http://www.google.com/search">
+                    <div>
+                        <label for="workshopreg">Workshop Registration</label>
+                        <select name="moreoptions">
+                            <option>More Actions</option> 
+                        </select>
+                    </div>
+            </div>
+            <div class="column1">
+                <p>Register now while seats are available!</p>
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input id="fname" type="text">
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input id="lname" type="text">
+                    </div>
+                    <div>
+                        <label for="company">Company/Institution</label>
+                        <input id="company" type="text">
+                    </div>
+                    
+                    <div>
+                        <label for="address">Address</label>
+                        <textarea rows="5" cols="30">Address Here</textarea>
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input id="city" type="text">
+                    </div>
+                    <div>
+                        <label for="country">Country</label>
+                        <select name="country">
+                            <option>-Select-</option>
+                            <option>USA</option>
+                            <option>Canada</option>
+                            <option>Ethiopia</option>
+                            <option>Korea</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="state">State/Province/Region</label>
+                        <select name="states">
+                            <option>-Select-</option>
+                            <option>MD</option>
+                            <option>VA</option>
+                            <option>IA</option>
+                            <option>IL</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="text">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="text"><br>
+                    </div>
+                </div>
+            <div class="column2">
+                <p>Lunch</p>
+                <div>
+                    <label for="meals">Meal Preference</label>
+                    <select name="meals">
+                        <option>-Select-</option>
+                        <option>Vegeterian</option>
+                        <option>Dairy Free</option>
+                    </select>
+                </div>
+                <p>Payment Details</p>
+                <div class="pmtoptions">
+                    <label for="paymentmode">Payment Mode</label>
+                    <div>
+                        <input type="radio" name="pmt" value="Cash"/>Cash<br/>
+                        <input type="radio" name="pmt" value="Cheque"/>Cheque<br/>
+                        <input type="radio" name="pmt" value="Demand Draft"/>Demand Draft<br/>
+                    </div>
+                </div>
+                <div>
+                    <label for="chequeNo">DD/ChequeNo.</label>
+                    <input id="chequeNo" type="text">
+                </div>
+                <div>
+                    <label for="drawnOn">Drawn On (Bank Name)</label>
+                    <input id="drawnOn" type="text">
+                </div>
+                <div>
+                    <label for="payableat">Payable at</label>
+                    <input id="payableat" type="text">
+                </div>
+            </div>
+            <div class="grid-footer">
+                <div>
+                    <input class = "btn" type="submit"/>
+                    <input class = "btn" type="reset"/>
+                </div>
+                </form>
+            </div>       
+        </div>
+    </body>
+</html>
