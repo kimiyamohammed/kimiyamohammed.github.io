@@ -1,0 +1,32 @@
+Also add a line of code that will stop the clock after 10 ticks 
+-- setTimeout(()=>clock.stop(),10000);
+What is the inner function of the constructor function? 
+-- render()
+What is the local variable of the constructor function? 
+-- timer
+What is the clock “interface” returned by the constructor function? 
+-- object of clock
+What are the closures?
+-- no closures
+What are the private variables and functions? 
+-- timer, render
+What are the public methods? 
+-- stop, start
+
+Also add a line of code that will stop the clock after 10 ticks 
+-- setTimeout(()=>clock.stop(),10000);
+What is the inner function of the constructor function? 
+-- no inner function
+What is the local variable of the constructor function? 
+-- no local variable
+What is the clock “interface” returned by the constructor function? 
+-- object of clock
+What are the closures?
+-- no closures
+What are the private variables and functions? 
+-- no private variables
+What are the public methods? 
+-- stop, start, render
+
+How does this example illustrate that a JavaScript class is really a function and not an object? 
+-- no relationship in this scenario.

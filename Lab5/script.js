@@ -19,3 +19,4 @@ let str = ['apples', 'animal', 'welcome', 'rainbow', 'universe'];
 let result2 = getNewArray(str);
 
 alert('1.Sum= ' + result1 +'\n2.NewArray= ['+ result2 +']');
+
