@@ -17,3 +17,4 @@ Array.prototype.sort = function(){
     }
     return arr;
 }
+console.log(kkk);

@@ -5,22 +5,22 @@ calling object is Window and 'this' will start to refer Window. And Window objec
 So it will become undefined.*/
 
 
-function askPassword(ok,fail){
-    let password = prompt("password?",'');
-    if(password == "rockstar") ok();
-    else fail();
+// function askPassword(ok,fail){
+//     let password = prompt("password?",'');
+//     if(password == "rockstar") ok();
+//     else fail();
 
-}
-let user ={
-    name:'john',
-    loginOk(){
-        alert(`${this.name} logged In`);
-    },
-    loginFail(){
-        alert(`${this.name} Failed to log In`);
-    }
-};
-askPassword(user.loginOk.bind(this),user.loginFail.bind(this));
+// }
+// let user ={
+//     name:'john',
+//     loginOk(){
+//         alert(`${this.name} logged In`);
+//     },
+//     loginFail(){
+//         alert(`${this.name} Failed to log In`);
+//     }
+// };
+// askPassword(user.loginOk.bind(this),user.loginFail.bind(this));
 
 
 
@@ -32,34 +32,34 @@ let group ={
         this.students.forEach(function(student){console.log(this.title +': '+ student)}.bind(this));
     }
 };
-group.showList();
+ group.showList();
 
-let group ={
-    title: "our group",
-    students:["John", "Pete", "Alice"],
-    showList:function(){
-        this.students.forEach((student) => function(student){console.log(this.title +': '+ student)}.call(this,student));
-    }
-};
-group.showList();
+// let group ={
+//     title: "our group",
+//     students:["John", "Pete", "Alice"],
+//     showList:function(){
+//         this.students.forEach((student) => function(student){console.log(this.title +': '+ student)}.call(this,student));
+//     }
+// };
+// group.showList();
 
-let group ={
-    title: "our group",
-    students:["John", "Pete", "Alice"],
-    showList:function(){
-        this.students.forEach(student => function(student){console.log(this.title +': '+ student)}.apply(this,[student]));
-    }
-};
-group.showList();
+// let group ={
+//     title: "our group",
+//     students:["John", "Pete", "Alice"],
+//     showList:function(){
+//         this.students.forEach(student => function(student){console.log(this.title +': '+ student)}.apply(this,[student]));
+//     }
+// };
+// group.showList();
 
-let group ={
-    title: "our group",
-    students:["John", "Pete", "Alice"],
-    showList:function(){
-        const self = this;
-        this.students.forEach(function(student){console.log(self.title +': '+ student)});
-    }
-};
-group.showList();
+// let group ={
+//     title: "our group",
+//     students:["John", "Pete", "Alice"],
+//     showList:function(){
+//         const self = this;
+//         this.students.forEach(function(student){console.log(self.title +': '+ student)});
+//     }
+// };
+// group.showList();
 
 

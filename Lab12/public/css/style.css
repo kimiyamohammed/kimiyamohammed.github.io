@@ -1,0 +1,17 @@
+body{
+    background-color: bisque;
+    font-size: 120%;
+    margin:10% 40%;
+}
+input{
+    padding:3% 20%;
+}
+
+#container{
+    overflow: hidden;
+    margin:-10% -50%;
+}
+#container form{
+    float: left;
+    margin-left: 10% ;
+}
