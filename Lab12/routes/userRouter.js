@@ -13,4 +13,6 @@ router.post('/',(req,res,next) => {
     res.end();
 });
 
+router.all('*', (req,res,next) => {throw new Error("Error!!!")});
+
 module.exports = router;

@@ -1,5 +1,4 @@
-1. setTimeout runs in Timer phase, setImmediate runs in check phase. For example: If
-   there's a case needs to run just before close phase, we can use setImmediate.
+1. setTimeout runs in Timer phase, setImmediate runs in check phase. For example: If there's a case needs to run just before close phase, we can use setImmediate.
 
 2.  * process.nextTick executes multiple times per cycle where as setImmediate executes only once.
     * callbacks in nextTick queue will be drained out in each execution of the queue unlike callbacks in the check queue.
